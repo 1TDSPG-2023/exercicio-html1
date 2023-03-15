@@ -14,11 +14,6 @@
         display: block;
         margin: 0%;
     }
-    .linha{
-        color: black;
-        width: 100%;
-        margin: 0%;
-    }
     ul{
         display: flex;
         padding: 0;
@@ -28,20 +23,28 @@
     }
     a{
         text-decoration: none;
+        color: black;
+        padding: 20px 10px;
+        border: none;
+        font-size: 16px;
+        margin-bottom: 20px;
     }
-    .botao{
-        width: 140px;
+    a:hover{
+        background-color: rgb(190, 190, 190);
     }
 </style>
 <body>
     <div class="container">
         <nav>
             <ul>
-                <li><button class="botao"><a href="mobile.html">MOBILE</a></button></li>
-                <li><button class="botao"><a href="games.html">GAMES</a></button></li>
+                <li>
+                    <a href="mobile.html" style="border-right: 1px solid black;">MOBILE</a>
+                </li>
+                <li>
+                    <a href="games.html">GAMES</a>
+                </li>
             </ul>
         </nav>
-        <hr class="linha">
         <header>
             <h1>HOME</h1>
         </header>
@@ -55,7 +58,7 @@
             </h2>
         </section>
         <footer>
-            <p>copyright &copy - 2023</p>
+            <p>Copyright &copy - 2023</p>
         </footer>
     </div>
 </body>
