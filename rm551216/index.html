@@ -5,13 +5,86 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Solução do exercício</title>
+
+    <style>
+        /*
+            Esse é um comentario em css.
+        */
+
+        /*
+            Seletores em css.
+            Seletores em css pode ser qualquer elemento/tag em HTML.
+            EX: p, spna, div, a, nav, header, etc;
+
+            Os seletores sao utilizados para que seja aplicado o estilo em cascata ou individualmente.
+            Ex de seletor induvidual.
+            id
+            <div id="bloco">
+                DIV
+            </div>
+            o id desta div ses tornou um seletor individual.
+            No css para selecionar um id utilizamos o simbolo de #.
+            Ex: #bloco{}
+
+            mas temos seletores de classes que podem afetar mais de um elemento do mesmo tipo ou nao.
+            Ex: class
+            Exemplo de ultilizacao:
+            <p class="texto">Nome</p>
+            <span class="texto">Turma</span>
+            E no css sendo utilizado: 
+            Sendo menos especifico.texto{}
+            Sendo mais especifico p.texto{}
+            Sendo mais especifico span.texto{}
+
+            Bloco do CSS.
+
+            seletor + bloco de declaracao + prioridade + valor
+
+            .{
+                propriedade : valor;
+            }
+
+            #nome{
+                propriedade : valor;
+                }
+        */
+
+                /* Colocando o menu em linha */
+
+        #menu {
+            background-color:#0905f1;
+            
+        }
+ 
+        #menu>li{
+            display: inline;    
+            float: right;
+            padding: 0 20px 0 20px;
+        }
+
+        #menu>li a {
+            text-decoration: none;  
+            color:#0905f1;
+            font-size: 32px;
+        } 
+        
+        #menu>li a:hover {
+            background-color: #0905f1;
+            color:#fff;
+        }
+
+        header{
+            clear: both;
+        }
+    </style>
+    
 </head>
     <body>
     <div class="container">
         <nav>
-            <ul>
+            <ul id="menu">
                 <li><a href="./mobile.html">MOBILE</a></li>
-                <li><a href="./games.html">GAmes</a></li>
+                <li><a href="./games.html">GAMES</a></li>
             </ul>
         </nav>
 
@@ -19,10 +92,10 @@
             <h1>HOME</h1>
         </header>
         <section>
-            <h2>MOBILE</h2>
+                <h2>MOBILE</h2>
                 <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Modi tempore possimus repellat nemo accusantium fugit obcaecati animi maiores commodi adipisci error sint debitis, fugiat accusamus aspernatur deleniti amet, dolores nesciunt praesentium eaque quidem nobis, dolorum iste laborum! Harum repudiandae aliquam laboriosam excepturi suscipit nisi dicta, fugiat perspiciatis explicabo similique ipsum quidem eaque dolor, enim aut praesentium, blanditiis placeat! Aliquid veniam laboriosam amet iste quas mollitia a maxime perferendis! Architecto et temporibus asperiores sunt sit fuga! Esse et, praesentium asperiores saepe corrupti est nisi assumenda modi dignissimos, quos at repellendus quia. Rerum quis possimus eos illo quos. Beatae consectetur tenetur quae.</p>               
             
-            <h2>GAMES</h2>
+                <h2>GAMES</h2>
                 <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ex reiciendis aliquid facere eum deleniti voluptatibus, sunt veniam nulla quod voluptas. Commodi, iure sint recusandae impedit, quidem quam eveniet blanditiis mollitia animi exercitationem quis beatae. Rerum ut modi soluta temporibus error. Aperiam quisquam sed error aut unde! Non pariatur, rem quibusdam labore provident impedit qui dolor, quas, fugit corrupti accusantium? Excepturi quisquam pariatur ratione voluptatem? Ratione, iste? Perspiciatis inventore sint aspernatur unde necessitatibus temporibus tempora animi nihil, nostrum ullam facilis, qui, corporis incidunt modi. Quo, autem? Sunt totam saepe, maiores repudiandae consequatur optio dolorem maxime perspiciatis ratione repellat voluptas asperiores? Architecto dolores similique eaque eius omnis reprehenderit facere, provident sequi rerum. Impedit fugit ipsam, possimus labore expedita soluta ullam voluptatum culpa, ratione excepturi incidunt harum rem. Beatae repellat iusto optio eveniet harum atque, veniam eum quas excepturi facilis? Architecto doloribus harum itaque illum sint? Rerum, blanditiis. At alias incidunt deserunt necessitatibus.</p>
             
         </section>
