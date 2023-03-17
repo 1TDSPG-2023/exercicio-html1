@@ -5,13 +5,47 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Solução do Exercício</title>
+ 
+    <style>
+
+      /*colocando o meuno em linha*/
+
+      #menu> {
+        background-color: #0905f1;
+        
+      }
+      #menu>li {
+       display: inline;
+       float: right;
+       padding:  0 20px 0 20px;
+      
+    }
+
+      #menu>li a {
+       text-decoration: none;
+       color: #0905f1;
+        font-size: 32px;
+      }
+
+      #menu>li a:hover {
+       background-color: #0905f1;
+       color: #fff;
+      }
+
+   header { 
+    clear: both;
+         }
+    </style>
+
 </head>
+
 <body>
     <!-- div, nav, ul, li, header,h1 -->
 
     <div class="container">
         <nav>
-            <ul>
+            <ul id="menu">
+        
                 <li><a href="./mobile.html">MOBILE</a></li>
                 <li><a href="./games.html">GAMES</a></li>
             </ul>
