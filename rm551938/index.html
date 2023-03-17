@@ -5,11 +5,79 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Solução exercicio</title>
+
+    <style>
+        /*
+            Esse é um comentário em css.
+        */
+        /*
+            SELETORES EM CSS
+            Seletores em css pode ser qualquer elemento/tag em HTML.
+            Ex: p, span, div, a, nav, header, etc;
+            Exemplo de utilização: p{}  
+
+            Os seletores são utilizados para que seja aplicado o estilo em cascata ou individual.
+            Ex de seletor individual.
+            id
+            <div id="bloco">
+                DIV
+            </div>
+            o id desta div se tornou um seletor individual.
+            No css para selecionar um id utilizamos o simbolo de #.
+            Ex: #bloco{}
+
+            Mas temos seletores de classes que podem afetar mais de um elemento do mesmo tipo ou não.
+            Ex: class
+            Exemplo de utilização: <p class="texto">Nome</p>
+            <span class="texto">Turma</span>
+            E no css sendo utilizado: .Sendo menos especifico .texto{}
+            Sendo mais especifico p.texto{}
+            Sendo mais especifico span.texto{}
+
+            Bloco do css
+
+            seletor + bloco de declaração + propriedade + valor
+
+            .{
+                propriedade :valor;
+            }
+
+            #nome{
+                propriedade: valor;
+            }
+
+        */
+
+        #menu{
+            background-color: #0905f1;
+        }
+        #menu > li{
+            display: inline;
+            float: right;
+            padding: 0 20px 0 20px;
+        }
+        #menu>li a {
+            text-decoration: none;
+           color: #0905f1;
+           font-size: 32px;
+        }
+            #menu>li a:hover{
+                background-color: #0905f1;
+                color: #fff ;
+            }
+
+        header {
+            clear: both;
+        }
+
+    </style>
+
+
 </head>
 <body>
     <div class="container">
         <nav>
-            <ul>
+            <ul id="menu">
                 <li> <a href="./mobile.html"> MOBILE </a>  </li>
                 <li><a href="./games.html"> GAMES </a></li>
             </ul>
@@ -20,16 +88,14 @@
         </header>
 
         <section>
-            <h2>MOBILE
+            <h2>MOBILE </h2>
                 <p>
                     Lorem ipsum, dolor sit amet consectetur adipisicing elit. Reprehenderit, eius, esse nam aut quod amet mollitia rerum, incidunt culpa voluptatem odit temporibus explicabo dolore deserunt quo ipsum nesciunt quam! Nobis fuga odit temporibus accusantium, quasi tenetur quos. Laudantium alias sed quibusdam molestiae eligendi tempore nulla repudiandae facilis nisi praesentium. Inventore maxime libero officiis ratione distinctio sequi dolore sint quasi voluptates, debitis at deserunt praesentium deleniti vel, cum non quia commodi! Quisquam neque perferendis non architecto corporis dolore dignissimos ad consectetur, magnam debitis reiciendis iure repellendus eum odio nam sequi quasi necessitatibus nisi ducimus voluptatem ullam libero culpa? Esse, voluptatibus voluptas.
                 </p>
-            </h2>
-            <h2>GAMES
+            <h2>GAMES</h2>
                 <p>
                   Lorem ipsum dolor sit amet consectetur adipisicing elit. Eveniet aperiam quas eaque aspernatur similique placeat blanditiis soluta debitis. Minima, velit eaque. Dolore harum nulla, commodi quas in soluta! Quas temporibus fuga aperiam autem. Excepturi nulla aut expedita molestiae vel officia iusto numquam nemo mollitia placeat nam accusamus facere, cum corporis minus ut, recusandae incidunt quae? Magnam laboriosam veritatis dicta minus repellendus aspernatur non reiciendis possimus beatae tenetur, nesciunt eveniet, obcaecati iste aperiam corporis. Beatae esse unde maiores officiis quam ducimus laboriosam repellendus minima, quibusdam iure. Repudiandae voluptates earum quod rem laboriosam quo eius dolorem explicabo velit saepe odio, optio sit quia asperiores quas nam deleniti totam voluptas repellendus. Doloribus minima sint non accusamus, ad maxime quidem perferendis! Incidunt sint neque suscipit molestiae modi excepturi non voluptate autem quae cumque, nobis at amet odit ut temporibus ab accusantium consequatur recusandae vero, quibusdam voluptatibus nostrum. A consectetur dolorum delectus, hic dicta distinctio!  
                 </p>
-            </h2>
         </section>
 
 
