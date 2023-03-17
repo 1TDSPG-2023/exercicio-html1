@@ -5,15 +5,90 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Solução do Exercício</title>
+
+    <style>
+        /*
+            Esse é um cometário em CSS.
+        */
+
+        /*
+            SELETORES EM CSS
+            Seletores em CSS podem ser qualquer elemento /tag em HTML.
+            Ex.: p, span, div, a, nav, header, body, etc;
+            Exemplo de utilização: p{}
+
+            Os seletores são utilizados para que o estilo seja aplicado em cascata ou individual.
+            Ex de seletor individual
+            id
+            <div id="bloco">
+                DIV
+            </div>
+            O ID dessa div se tornou um seletor individual.
+            No CSS para selecionar um ID utilizamos o simbolo de #.
+            Ex.: #bloco{}
+
+            Mas temos seletores de classes que podem afetar mais de um elemento do mesmo tipo ou não.
+            Ex.: class
+            Exemplo de utilização:
+            <p class="texto">Nome</p>
+            <span class="texto">Turma</span>
+            E no CSS sendo utilizado:
+            Sendo menos específico .texto{}
+            Sendo mais específico p.texto{}
+            Sendo mais específico span.texto{}
+
+            Bloco do CSS
+
+            seletor + bloco de declaração + propriedade + valor
+
+            .{
+                propriedade : valor;
+            }
+
+            #nome{ 
+                propriedade : valor;
+            }
+
+         */
+
+            /*Colocando o menu em linha*/
+            #menu {
+                background-color: #0905f1;
+                
+            }
+
+            #menu > li{
+                display: inline;
+                float: right;
+                padding: 0 20px 0 20px;
+            }
+
+            #menu > li a {
+                text-decoration: none;
+                color: #0905f1;
+                font-size: 32px;
+            }
+
+            #menu > li a:hover {
+                background-color: #0905f1;
+                color: #fff;
+            }
+
+            header{
+                clear: both;
+            }
+
+    </style>
+
 </head>
 <body>
     <!-- div, nav, ul, li, header,h1 -->
 
     <div class="container">
         <nav>
-            <ul>
+            <ul id="menu">
                 <li> <a href="./mobile.html">MOBILE</a></li>
-                <li> <a href="./games.html">GAMES</a>></li>
+                <li> <a href="./games.html">GAMES</a></li>
             </ul>
         </nav>
 
@@ -24,12 +99,11 @@
                 <!-- section,h2,p,footer,p -->
         
                 <section>
-                    <h2>MOBILE
+                    <h2>MOBILE</h2>
                         <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Praesentium repellat tempore repellendus atque voluptas quod dolorum ad id quis odio adipisci et impedit laborum est, harum magnam tempora excepturi? Voluptates voluptatibus exercitationem excepturi quaerat, dolorum nam, molestias quibusdam inventore dolores molestiae, rem corporis debitis ut soluta commodi voluptatum facere fuga dolore expedita? Quibusdam deleniti quaerat voluptatum soluta quia rem perspiciatis similique, quisquam eaque vel animi officiis repellendus laborum eligendi recusandae voluptatem minus sapiente et, quas earum beatae ut, reprehenderit corporis aut. Asperiores commodi atque velit architecto quidem! Ipsa nostrum sint quis minus non soluta blanditiis reiciendis tenetur quaerat! Necessitatibus, sint!</p>
-                    </h2>
-                    <h2>GAMES
+                   
+                    <h2>GAMES</h2>
                         <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Doloribus voluptatem facilis corporis, eum expedita natus quod vel ex accusantium tempore labore quisquam, fugit ratione, a fuga aspernatur inventore autem! Sunt architecto quibusdam reiciendis cum labore quasi? Dolorem officia iure nostrum enim officiis rerum at, perspiciatis totam consectetur ex? Doloremque, beatae atque voluptatem suscipit velit itaque voluptatum? Quia facere repellendus cum modi. Consectetur nostrum iste blanditiis id delectus reprehenderit sit! Non recusandae ipsam in mollitia ad eligendi cumque obcaecati. Odit id quas iure aliquam ullam iusto ducimus molestias ea corporis. Id reprehenderit excepturi veniam necessitatibus laboriosam facilis neque doloremque odio eum!</p>
-                    </h2>
                     
                 </section>
         
