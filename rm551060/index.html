@@ -5,12 +5,78 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>solucao do exercício</title>
+
+    <style>
+        /*
+            Esse é um comentário em css
+        */
+
+        /*
+            SELETORES EM CSS.
+            Seletores em css pode ser qualquer elemengo/tag em HTML.
+            Ex: p, span, div, a, nav, header, etc;
+            Exemplo de utilização: p{}
+
+            Os seletores são utilizados para que seja aplicado o estilo cascata ou individualmente.
+            Ex de seletor individual.
+            id
+            <div id="bloco">
+                DIV
+            </div>
+            O id dessa div se tornou um seletor individual.
+            No css para selecionar um id o símbolo de #.
+            Ex: #bloco{}
+
+            Mas temos seletores de classes que podem afetar mais de um elemento do mesmo tipo ou não.
+            Ex: class
+            Exemplo de utilização:
+            <p class>="texto">Nome</p>
+            <span class="texto">Turma</span>
+            E no css sendo utilizado: 
+            Sendo menos específico .texto{}
+            Sendo mais específico p.texto{}
+            Sendo mais específico span.texto{}
+
+            Bloco do CSS
+            
+            seletor + bloco de declaração + propriedade + valor
+
+        */
+
+        /* colocando o menu em linha*/
+        #menu {
+            background-color: #0307be;
+        }
+
+        #menu >li {
+            display:inline;
+            float: right;
+            padding:  0 20px 0 20px;
+        }
+
+        #menu >li a {
+            text-decoration: none;
+            color:#0307be;
+            font-size: 32px;
+        }
+
+        #menu>li a:hover {
+            background-color: #0307be;
+            color:#fff;
+        }
+
+        header{
+            clear: both;
+        }
+    </style>
+
 </head>
+
 <body>
     <!-- div, nav, ul, li, header, h1 -->
-    <div>class="container"
+    <div class="container">
         <nav>
-            <ul>
+            <ul id="menu">
                 <li> <a href="./mobile.html">MOBILE</a></li>
                 <li> <a href="./games.html">GAMES</a></li>
             </ul>
@@ -21,12 +87,10 @@
         </header>
         <!-- ,section,h2,p,footer,p -->
         <section>
-            <h2>MOBILE
+            <h2>MOBILE</h2>
                 <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Temporibus voluptatum doloremque laborum autem. Rerum aliquid aliquam vitae cupiditate. Nostrum dicta repudiandae quod architecto sunt aspernatur nesciunt veritatis possimus aliquam, nisi libero quia, tempora, facere voluptate. Non unde eligendi sapiente exercitationem recusandae molestias possimus aliquam quae. Esse numquam impedit laudantium ipsum quidem! Consequuntur nemo quibusdam veniam iure quod assumenda, vel ut voluptatibus, quo numquam delectus, ratione dolorem. Animi debitis ullam error iste incidunt beatae aperiam eveniet repudiandae maxime neque repellat rem eaque, dolorem unde veritatis ad. Sequi neque aspernatur quae dignissimos, doloremque ad vero animi error cumque sapiente dolore suscipit rerum?</p>
-            </h2>
-            <h2>GAMES
+            <h2>GAMES</h2>
                 <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Minima sed quasi, ipsam incidunt amet sequi quibusdam exercitationem dolor magni in officiis unde? Esse commodi ex, eos minus quasi blanditiis provident adipisci facere quidem assumenda pariatur. Deleniti magni eius dolorem, iure dignissimos eligendi libero tempore eum animi totam, iusto minus, architecto consequuntur voluptates beatae ipsam officia alias harum repellendus. Exercitationem qui eaque obcaecati voluptates suscipit similique doloribus adipisci eveniet facere, eum eos dolorem, pariatur mollitia quasi voluptatem, esse veritatis vitae. Nemo perspiciatis vero explicabo minus repellendus. Voluptates ea est sint fugiat placeat quas quaerat accusamus debitis esse ullam. Nulla in officia temporibus amet, harum obcaecati tenetur commodi sequi ipsum laborum numquam suscipit tempora perferendis magnam blanditiis inventore tempore possimus ullam! Ducimus, illo perspiciatis. Tenetur sit eum sint dolorem assumenda deserunt illum beatae veritatis distinctio voluptatem, dolores incidunt fugit rerum reiciendis fuga praesentium, aperiam placeat alias ex quo delectus aliquam obcaecati autem.</p>
-            </h2>
         </section>
 
         <footer>
