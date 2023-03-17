@@ -5,12 +5,81 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Solução do Exercício</title>
+
+    <style>
+        /*
+            ISSO EH UM COMENTARIO EM CSS
+        */
+        /*
+            SELETORES EM CSS
+            Seletores em css pode ser qqlr elemento/tag em HTML
+            Ex: p, span, div, a, nav, header, etc;
+            Ex de utilização: p{}
+            Os seletores são utilizados para que seja aplicado o estilo em cascata ou individualmente.
+            Ex de seletor individual:
+            id
+            <div id="bloco">
+                DIV
+            </div>
+            O id desta div se tornou um seletor individual
+            No css para selecionar o id ultilizamos o simbolo #
+            Ex: #bloco{}
+
+            Mas temos seletores de classes que podem afetar mais de um elemento do mesmo tipo ou nao.
+            Ex: class
+            Ex de utilização: 
+            <p class="texto">Nome</p>
+            <span class="texto">Turma</span>
+            E no css sendo utilizado: .texto{} muda o estilo de todos os elementos com a class
+            Sendo mais especifico p.texto{}
+
+            Bloco do CSS
+
+            seletor + bloco de declaração + propriedade + valor
+
+            (seletor)p{  <-(inicio bloco de declaração)
+                propriedade: valor;
+            } <-(fim bloco de declaração)
+*/
+        /*Colocando o menu em  linha*/
+        #menu{
+            background-color: #0905f1;/*muda a cor do fundo*/
+            
+            
+        }
+        #menu > li{
+            display: inline;
+            float: left;
+            padding: 0px 100px 0px 100px;
+            
+
+        }
+        #menu > li a{
+            text-decoration: none;
+            color: white;
+            font-size: 32px;
+
+        }
+        
+         #menu > li a:hover{/*pseudoclasse q quando passar o mouse por cima do seletor ira ocorrer o estilo q esta dentro*/
+            background-color: blue;
+            color: white;
+            
+
+        }
+
+        header{
+            clear: both;/*Serve pra nao movimentar para cima com o float*/
+        }
+    </style>
+
 </head>
+
 <body>
     <!-- div, nav, ul, il, header, h1-->
     <div class="container">
         <nav>
-            <ul>
+            <ul id="menu">
                 <li> <a href="./mobile.html" target="_blank">MOBILE</a></li><!--target serve pra abrir outra guia qnd clica no linl-->
                 <li> <a href="./games.html" target="_blank">GAMES</a></li>
             </ul>
@@ -22,11 +91,11 @@
 
         <!-- sec,h2,p,footer,p-->
         <section>
-            <h1>MOBILE
-                <p><h5>Lorem ipsum dolor sit amet consectetur adipisicing elit. Repellendus dicta consequatur facilis impedit ea, nam quos culpa a, veniam assumenda expedita repudiandae nemo iure deleniti beatae, commodi harum! Molestiae, itaque.</h5>
-            </h1>
+            <h2>MOBILE
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Repellendus dicta consequatur facilis impedit ea, nam quos culpa a, veniam assumenda expedita repudiandae nemo iure deleniti beatae, commodi harum! Molestiae, itaque.</p>
+            </h2>
             <h1>GAMES
-                <p><h5>Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptas accusantium pariatur, quis, alias consequuntur in fuga, laudantium at aut illo iste. Molestias voluptatem neque et nisi doloremque, ad ipsum distinctio!</h5></p>
+            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Cumque fuga voluptatum iusto quod similique labore quae, modi non doloribus eveniet illo pariatur blanditiis excepturi autem commodi sapiente placeat aspernatur voluptas.</p>
             </h1>
         </section>
 
