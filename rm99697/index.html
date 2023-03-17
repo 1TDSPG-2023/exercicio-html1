@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Solução do Exercício!</title>
+
+    <style>
+        /*
+            Esse é um comentário em CSS
+        */
+
+        /*
+            Seletores em CSS
+            Seletores em CSS podem ser qualquer elemento/tag em HTML.
+            Ex: p, span, div, a, nav, header, body, ul, etc;
+            Exemplo  de utilização: p{}
+
+
+            Os seletores são utilizados para que seja aplicado o estilo em cascata ou individual.
+            Ex de seletor individual: 
+            id 
+            <div id="bloco">
+                DIV
+            </div>
+            O id desta div se tornou um seletor individual. 
+            No CSS, para selecionar um id utilizamos o símbolo de #. Para selecionar uma classe usamos .
+            Ex: #bloco{}
+            Ex: .texto{}
+
+            Mas temos seletores de classes que podem afetar mais de um elemento do mesmo tipo ou não.
+            Ex: class
+            Exemplo de utilização: 
+            <p class="texto">Nome</p>
+            <span class="texto">Turma</span>
+            E no css sendo utilizado:
+            Sendo menos específico: .texto{}
+            Sendo mais específico p.texto{}
+            Sendo mais específico span.texto{}
+
+            Bloco do CSS é formado pelo:
+            
+            seletor + bloco de declaração (bloco de código) + propriedade + valor
+            
+            p {
+                propriedade : valor;
+            }
+
+            onde:
+            p = seletor
+            { = inicio do bloco de declaração
+            propriedade = propriedade 
+            valor = valor da propriedade
+            ; = fim da propriedade
+            } = fim do bloco de declaração
+
+
+
+        */
+
+        /* Colocando o menu em linha*/
+        
+        #menu {
+            background-color: #191194;
+        }
+
+        #menu>li { 
+            display: inline;
+            float: right;
+            padding: 0 20px 0 20px; /*A leitura da caixa sempre se da da seguinte forma: cima, direita, baixo, esquerda */
+        } /* aqui nós não definimos id ou class para <li> pois ele é filho direto do menu, sendo assim aplicamos o sistema de herança*/
+        
+        #menu>li a{ 
+            text-decoration: none; /* tirando toda a decoração do a*/
+            color: #090202;
+            font-size: 32px;
+        }
+        #menu>li a:hover{
+
+
+        }
+
+
+        header{
+            clear: both;
+        }
+    </style>
+
+</head>
+<body>
+    <!-- Esse é um comentário em HTML -->
+    <!-- ID são usados para classificar um único, enquanto class para classificar mais de um e usarmos de uma vez-->
+    <div class="container">
+        <nav>
+            <ul id="menu">
+                <li> <a href="./mobile.html">MOBILE</a></li>
+                <li> <a href="./games.html">GAMES</a></li>
+            </ul>
+        </nav>
+
+        <header>
+            <h1>HOME</h1>
+        </header>
+
+        <section>
+            <h2>MOBILE</h2>
+                <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Laudantium, quis optio. Delectus, ad nesciunt vitae sit obcaecati rerum aut officiis, quae pariatur quod commodi, autem ratione quis eius natus quaerat praesentium repellendus? Labore corrupti deleniti beatae repellat impedit. Non quia iusto rem ab eveniet repellendus aliquid. Officiis aut aperiam perferendis provident qui laboriosam architecto sed, atque amet at ipsa alias distinctio aspernatur exercitationem dicta animi placeat itaque minima eius vero voluptatem. Atque ducimus error, expedita velit eum beatae dolores, nihil libero culpa veritatis perspiciatis nesciunt sint cumque sequi tenetur molestias rerum unde animi iusto eaque laborum fugiat blanditiis. Soluta, incidunt.</p>
+
+            <h2>GAMES</h2>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ut error iste minus? Error voluptatem fugiat nulla dolores hic perferendis animi consectetur adipisci enim repellendus. Officiis vitae ea, rem cupiditate voluptatum maiores earum cum eaque, ipsa, inventore eligendi ipsum! Placeat nobis, dolorum praesentium a saepe perferendis nesciunt fuga at pariatur odio ut laborum. Non, neque doloremque quas cupiditate dolorem recusandae? Nisi ex dolorum sunt, ut sapiente, eius est temporibus facere labore vero at provident impedit neque id soluta consectetur. Adipisci voluptatibus temporibus sed vel vitae sit rerum, modi laboriosam animi provident saepe, impedit, illum ea quam ducimus voluptate ipsa? Dolor, distinctio vel? Consequatur sunt autem quis nemo blanditiis iure libero, cumque deserunt. Dolores ad doloremque, dolore aperiam blanditiis quo cupiditate temporibus repellat molestias quasi. Cupiditate, esse! Repellendus consectetur, quisquam molestiae recusandae dolore eveniet rerum debitis nam expedita doloribus. Nesciunt ad, eius, labore vitae consequatur nulla, sint nobis quam molestias itaque laborum?</p>
+                
+        </section>
+        
+        <footer>
+            <p>copyright &copy - 2023</p>
+        </footer>
+    </div>
+</body>
+</html>
