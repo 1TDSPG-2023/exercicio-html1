@@ -5,13 +5,80 @@
         <meta http-equiv="X-UA-Compatible" content="IE=edge">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <title>Solução do Exercício</title>
+
+        <style>
+            /*
+                Esse é um comentario em css
+            */
+
+            /*
+                SELETORES EM CSS
+                Seletores em CSS, pode ser qualquer elemento/tag em HTML.
+                Ex.: p, span, div, a, nav, header, body, h1, etc;
+                Exemplo de utilização: p{}
+
+                Os seletores são utilizados para que seja aplicado o estilo em cascata ou individualmente. 
+                Exemplo de Seletor Individual:
+                id
+                <div id="bloco"> 
+                    DIV    
+                </div>
+                O id desta div, se tornou um Seletor Individual.
+
+                No CSS para selecionar um id utilizamos o simbolo #.
+                Ex.: #bloco{}
+
+                Mas temos Seletores de Classes que podem afetar mais de um elemento do mesmo tipo ou não.
+                Ex.: class
+                Exemplo de Utilização:
+                <p class="texto">Nome</p>
+                <span class="texto">
+                E no CSS sendo utilizado:
+                Sendo menos especifico .texto{}
+                Sendo mais especifico p.texto{}
+                Sendo mais especifico span.texto{}
+
+                Bloco do CSS
+
+                seletor + bloco de declaração + propriedade + valor;
+                ou seja : 
+                p + { + propriedade + valor + }
+            */
+
+            /*Colocando o menu em linha*/
+            
+            #menu {
+                float: right;
+            }
+
+            #menu > li{
+                display: inline;
+                padding: 0 20px 0 20px;
+            }
+
+            #menu > li a {
+                text-decoration: none;
+                color: #0000ff;
+                font-size: 32px;
+
+            }
+
+            #menu > li a:hover{
+                background-color: #0000ff;
+                color: #ffffff;
+            }
+
+            header{
+                clear: both;
+            }
+        </style>
     </head>
     <body>
         <div class="container">
             <nav>
-                <ul>
+                <ul id="menu">
+                    <li><a href="./games.html">GAMES</a></li>   
                     <li><a href="./mobile.html">MOBILE</a></li>
-                    <li><a href="./games.html">GAMES</a></li>
                 </ul>
             </nav>
 
