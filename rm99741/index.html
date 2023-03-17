@@ -5,14 +5,59 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Solução do exercicio</title>
+
+    <style>
+        /*
+            Esse é um comentario em css
+        */
+
+        /*
+            Seletores em css
+            Seletores em css pode ser qualquer elemento/tag em HTML.
+            Exemplos: p, span, div, a, nav,header e etc...
+            
+            Os seletores são utilizados para que seja aplicado o estilo em cascata ou individualmente.
+            Exemplo de seletor individual.
+            id
+        */
+
+        /*Colocando o menu em linha*/
+
+        #menu {
+          background-color: #0905f1;
+         
+        }
+
+        #menu > li {
+          display: inline ;  
+          float: right;
+          padding: 0 20px 0 20px ;
+        }
+
+        #menu > li a {
+          text-decoration: none; 
+          color: #0905f1; 
+          font-size: 32px;
+        }
+
+        #menu > li a:hover {
+            background-color: #0905f1;
+            color: #fff;
+        }
+
+        header{
+            clear: both;
+        }
+
+    </style>
 </head>
 <body>
     <div class="container">
        <nav>
-        <ul>
-            <li> <a href="./mobile.html">MOBILE</a></li>
-            <li> <a href="./games.html">GAMES</a> </li>
-        </ul>
+         <ul id="menu">
+             <li> <a href="./mobile.html">MOBILE</a></li>
+                <li> <a href="./games.html">GAMES</a> </li>
+            </ul>
        </nav>
 
        <header>
