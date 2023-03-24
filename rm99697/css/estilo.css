@@ -1,0 +1,28 @@
+* {
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+}
+.cabecalho > h1 {
+    background: #B6C608;
+    width: 465.71px;
+    height: 300px;
+    text-align: center;
+    float: left;
+}
+
+.cabecalho nav {
+    float: right;
+}
+
+.cabecalho nav ul li {
+    display: inline;
+    list-style: none;
+    padding: 100px;       
+    background-color: #D7CF21;
+    text-align: center;
+}
+#conteudo {
+    clear: left;
+}
+
