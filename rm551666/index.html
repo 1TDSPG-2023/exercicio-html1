@@ -1,25 +1,28 @@
-<!DOCTYPEhtml >
-< html  lang =" pt-br " >
+<!DOCTYPE html>
+<html lang="pt-br">
 
-< cabeça >
-    < meta  charset =" UTF-8 " >
-    < meta  http-equiv =" X-UA-Compatible " content =" IE=edge " >
-    < meta  name =" janela de visualização " conteúdo =" largura=largura do dispositivo, escala inicial=1,0 " >
-    < title > Solução do Exercício </ title >
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Solução do Exercício</title>
 
-    <estilo> _ _
+    
+
+
+    <style>
         /*
-            Esse é um comentário em css.
+            Esse é um comentário em css. 
         */
 
         /*
             SELETORES EM CSS
-            Seletores em css podem ser qualquer elemento/tag em HTML.
+            Seletores em css pode ser qualquer elemento/tag em HTML.
             Ex: p, span, div, a, nav, header, etc;
-            Exemplo de uso: p{}
-            Os seletores são utilizados para que seja aplicado o estilo em cascata ou individual.
+            Exemplo de utilização: p{}
+            Os seletores são utilizados para que seja aplicado o estilo em cascata ou individualmente.
             Ex de seletor individual.
-            eu ia
+            id
             <div id="bloco">
                 DIV
             </div>
@@ -27,18 +30,18 @@
             No css para selecionar um id utilizamos o simbolo de #.
             Ex: #bloco{}
             Mas temos seletores de classes que podem afetar mais de um elemento do mesmo tipo ou não.
-            Ex: classe
-            Exemplo de uso:
+            Ex: class
+            Exemplo de utilização:
             <p class="texto">Nome</p>
             <span class="texto">Turma</span>
-            E no css sendo usado:
-            Sendo menos específico .texto{}
-            Sendo mais específico p.texto{}
-            Sendo mais específico span.texto{}
+            E no css sendo utilizado:
+            Sendo menos especifico .texto{}
+            Sendo mais especifico p.texto{}
+            Sendo mais especifico span.texto{}
             Bloco do CSS
             seletor + bloco de declaração + propriedade + valor
             .{
-                propriedade :valor;
+                propiedade :valor;
             }
             #nome{
                 propriedade : valor;
@@ -46,86 +49,86 @@
         */
 
         /*Colocando o menu em linha*/
-        # menu {
-            cor de fundo :  # 0905f1 ;
+        #menu {
+            background-color: #0905f1;
 
         }
 
-        # menu > li {
-            exibição : em linha;
-            flutuar : direita;
-            preenchimento :  0  20 px  0  20 px ;
+        #menu>li {
+            display: inline;
+            float: right;
+            padding: 0 20px 0 20px;
 
         }
 
-        # menu > li  a {
-            decoração de texto : nenhum;
-            cor :  # 0905f1 ;
-            tamanho da fonte :  32 px ;
+        #menu>li a {
+            text-decoration: none;
+            color: #0905f1;
+            font-size: 32px;
         }
 
-        # menu > li  a : passe o mouse {
-            cor de fundo :  # 0905f1 ;
-            cor :  #fff ; _
+        #menu>li a:hover {
+            background-color: #0905f1;
+            color: #fff;
         }
 
-        cabeçalho {
-            claro : ambos;
+        header {
+            clear: both;
         }
-    </estilo> _ _
+    </style>
 
-</ cabeça >
+</head>
 
-< corpo >
+<body>
     <!-- div, nav, ul, li, header,h1 -->
 
-    < div  classe =" recipiente " >
-        <navegar> _ _
-            < ul  id =" menu " >
-                < li > < a  href =" ./mobile.html " > CELULAR </ a > </ li >
-                < li > < a  href =" ./games.html " > JOGOS </ a > </ li >
-            </ul> _ _
-        </nav> _ _
+    <div class="container">
+        <nav>
+            <ul id="menu">
+                <li><a href="./mobile.html">MOBILE</a></li>
+                <li><a href="./games.html">GAMES</a></li>
+            </ul>
+        </nav>
 
-        < cabeçalho >
-            < h1 > HOME </ h1 >
-        </ cabeçalho >
+        <header>
+            <h1>HOME</h1>
+        </header>
 
-        <!-- seção,h2,p,rodapé,p -->
-        < seção >
-            < h2 > MÓVEL </ h2 >
-            < p > Lorem ipsum dolor, sit amet consectetur adipisicing elit. Et dignissimos vero recusandae aliquam
-                repellat. Dolor animi natus nobis aperiam eos ab blanditiis, quo nesciunt. Reiciendis Architecto ut
-                aliquam comodi fugiat animi ea? Quae mollitia iure doloribus quod animi? Facilis magni eos tempora
+        <!-- section,h2,p,footer,p -->
+        <section>
+            <h2>MOBILE</h2>
+            <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Et dignissimos vero recusandae aliquam
+                repellat. Dolor animi natus nobis aperiam eos ab blanditiis, quo nesciunt. Reiciendis architecto ut
+                aliquam commodi fugiat animi ea? Quae mollitia iure doloribus quod animi? Facilis magni eos tempora
                 molestias minima odio quae quasi debitis ipsam mollitia cumque error, consequatur, ratione unde ab ipsa
-                sit eveniet sequi eum similique soluta, fugiat nobis? Suscipit menos ipsam nam voluptatem quo laborum
+                sit eveniet sequi eum similique soluta, fugiat nobis? Suscipit minus ipsam nam voluptatem quo laborum
                 nulla quis sunt vero dolorum exercitationem est cumque explicabo, reiciendis id quidem veritatis,
-                consectetur omnis alias autem reprehenderit inventore saepe adipisci. Erro, quas quibusdam sint iure
-                impedit repellat. </p> _ _
+                consectetur omnis alias autem reprehenderit inventore saepe adipisci. Error, quas quibusdam sint iure
+                impedit repellat.</p>
 
-            < h2 > JOGOS </ h2 >
-            < p > Lorem ipsum dolor sit amet consectetur adipisicing elit. Neque saepe iure optio ab repellendus
+            <h2>GAMES</h2>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Neque saepe iure optio ab repellendus
                 nostrum quibusdam voluptate cumque doloremque! Debitis quidem modi recusandae sunt cumque, repellat
-                quaerat distintio quae voluptas animi cum dolore nostrum. Dolore beatae a, ducimus sequi debitis
-                incidunt tempora modi omnis accusantium ipsam? Sequi odit dicta sit? Ullam harum maiores oficiais
+                quaerat distinctio quae voluptas animi cum dolore nostrum. Dolore beatae a, ducimus sequi debitis
+                incidunt tempora modi omnis accusantium ipsam? Sequi odit dicta sit? Ullam harum maiores officia
                 vero alias magni cum exercitationem reprehenderit est eum, magnam ex non voluptas mollitia eius hic
                 natus perferendis recusandae incidunt laudantium quam enim aliquid iste! At necessitatibus quaerat
-                similique et dolorem magnam dolor repellendus sint ullam voluptatem maxime nulla facilis, em
-                temporibus suscipit arquiteto corrupti beatae, earum quae. Iusto atque eius explicabo consequatur
+                similique et dolorem magnam dolor repellendus sint ullam voluptatem maxime nulla facilis, in
+                temporibus suscipit architecto corrupti beatae, earum quae. Iusto atque eius explicabo consequatur
                 tempora alias sapiente, earum eum beatae voluptatum non quae possimus velit quidem nisi iure quas
                 sunt eaque maxime perferendis quaerat vitae cupiditate. Sunt obcaecati autem voluptate temporibus
-                est rerum illo similique repudiandae nobis labore! Qui laudantium cupiditate temporibus! Ódio
-                nostrum quibusdam qui cumque consequatur. </p> _ _
+                est rerum illo similique repudiandae nobis labore! Qui laudantium cupiditate temporibus! Odio
+                nostrum quibusdam qui cumque consequatur.</p>
 
-        </ seção >
+        </section>
 
 
-        < rodapé >
-            < p > direitos autorais e cópia - 2023 </ p >
-        </ rodapé >
+        <footer>
+            <p>copyright &copy - 2023</p>
+        </footer>
 
-    </div> _ _
+    </div>
 
-</ corpo >
+</body>
 
-</html> _ _
+</html>
