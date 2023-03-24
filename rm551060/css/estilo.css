@@ -1,0 +1,22 @@
+.cabecalho > h1 {
+    background: #FFF500; 
+    width: 467px;
+    height: 300px;
+    text-align: center;
+    float: left;
+}
+
+.cabecalho nav{
+    float: right;
+}
+
+.cabecalho nav ul li {
+    display: inline;
+    list-style: none;
+    padding: 0 10px 0 0;
+    background-color: #FFF500;
+}
+
+#conteudo{
+    clear: left;
+}
