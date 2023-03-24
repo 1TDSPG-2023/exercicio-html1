@@ -1,9 +1,33 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
 .cabecalho>h1{
     background-color: aquamarine;
     /* position: absolute; */
-    width: 1440px;
-    height: 300px;
-    left: 0px;
-    top: 0px;
+    width: 200px;
+    height: 100px;
+    text-align: center;
+    float: left;
+}
+
+.cabecalho nav{
+    float: right;
+}
+
+.cabecalho nav ul li{
+    display: inline;
+    list-style: none;
+    padding: 108px;
+    background-color: aquamarine;
+    width: 223px;
+    height: 299px;
     text-align: center;
 }
+
+
+#conteudo{
+    clear: left;
+} 
+
