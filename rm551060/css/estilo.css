@@ -7,11 +7,11 @@
 .cabecalho > h1 {
     background: #058ca4; 
     width: 300px;
-    height: 100px;
+    height: 200px;
     text-align: center;
     float: left;
-    padding: 20px 10px 0 10px;
-    font-size: 50px;
+    padding: 70px 10px 0 10px;
+    font-size: 55px;
 }
 
 
@@ -20,13 +20,22 @@
 }
 
 .cabecalho nav ul li {
-    display: inline;
+    display: inline-block;
     list-style: none;
-    padding: 108px;
+    padding: 0 10px;
+}
+
+.cabecalho nav ul li a{
+    text-decoration: none;
+    color: black;
+    font-size: 40px;
+    font-style: bold;
     background-color: #058ca4;
     width: 223px;
-    height: 299px;
+    height: 200px;
     text-align: center;
+    display: inline-block;
+    padding: 70px 10px 0 10px;
 }
 
 #conteudo{
