@@ -7,11 +7,13 @@
 
 
 .cabecalho > h1{
-    background: #FFF000;
-    width: 467px;
-    height: 299px;
+    background: #d9d9d9;
+    width: 300px;
+    height: 200px;
     text-align: center;
     float: left;
+    padding: 75px 10px 0px 10px;
+    font-size: 50px;
 }
   
 .cabecalho nav {
@@ -19,14 +21,25 @@
 }
 
 .cabecalho nav ul li{
-    display: inline;
+    display: inline-block;
     list-style: none;
-    padding: 100px;
-    background:#FFF000;
-    width: 223px;
-    height: 299px;
-    text-align: center;
+    padding: 0 10px;
+    
 }
+
+.cabecalho nav ul li a {
+    text-decoration: none;
+    color: #000000;
+    font-size: 40px;
+    background:#d9d9d9;
+    width: 223px;
+    height: 200px;
+    text-align: center;
+    display: inline-block;
+    padding: 75px 10px 0px 10px;
+    font-style: bold;
+}
+
 
 
 
