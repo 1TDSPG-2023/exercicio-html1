@@ -16,14 +16,25 @@
     float: right;
 }
 .cabecalho nav ul li{
-    display: inline;
+    display: inline-block;
     list-style: none;
-    padding: 108px;
-    background-color: aquamarine;
-    width: 223px;
-    height: 299px;
-    text-align: center;
+    padding: 0 10px;
+    
 }
+
+.cabecalho nav ul li a{
+    text-decoration: none;
+    color: #000000;
+    font-size: 40px;
+    font-style: bold;
+    background-color: #d9d9d9;
+    width: 223px;
+    height: 200px;
+    text-align: center;
+    display: inline-block;
+    padding: 70px 10px 0px 10px;
+}
+
 #conteudo{
     clear: left;
 }
