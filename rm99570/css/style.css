@@ -1,0 +1,71 @@
+/*
+            Esse é um comentário em css. 
+        */
+
+        /*
+            SELETORES EM CSS
+            Seletores em css pode ser qualquer elemento/tag em HTML.
+            Ex: p, span, div, a, nav, header, etc;
+            Exemplo de utilização: p{}
+            Os seletores são utilizados para que seja aplicado o estilo em cascata ou individualmente.
+            Ex de seletor individual.
+            id
+            <div id="bloco">
+                DIV
+            </div>
+            O id desta div se tornou um seletor individual.
+            No css para selecionar um id utilizamos o simbolo de #.
+            Ex: #bloco{}
+            Mas temos seletores de classes que podem afetar mais de um elemento do mesmo tipo ou não.
+            Ex: class
+            Exemplo de utilização:
+            <p class="texto">Nome</p>
+            <span class="texto">Turma</span>
+            E no css sendo utilizado:
+            Sendo menos especifico .texto{}
+            Sendo mais especifico p.texto{}
+            Sendo mais especifico span.texto{}
+            Bloco do CSS
+            seletor + bloco de declaração + propriedade + valor
+            .{
+                propiedade :valor;
+            }
+            #nome{
+                propriedade : valor;
+            }
+        */
+
+        /*Colocando o menu em linha*/
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.cabecalho>h1 {
+    background-color: #d9d9d9;
+    width: 300px;
+    height: 200px;
+    text-align: center;
+    float: left;
+    padding: 70px 10px 0 10px;
+    font-size: 50px;
+}
+
+.cabecalho nav {
+    float: right;
+}
+
+.cabecalho nav ul li {
+    display: inline;
+    list-style: none;
+    padding: 108px;
+    background-color: aquamarine;
+    width: 223px;
+    height: 299px;
+    text-align: center;
+}
+
+#conteudo {
+    clear: left;
+}
