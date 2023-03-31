@@ -20,14 +20,26 @@
     
 }
 .cabecalho nav ul li{
-    display: inline;/*tirar de bloco e colocar em linha*/
+    display: inline-block;/*tirar de bloco e colocar em linha*/
     list-style: none; /*tirar bolinhas da lista*/
-    padding: 108px;
-    background-color:rgba(255, 0, 0, 0.3) ;
-    text-align: center;
-
+    padding: 0 10px;
 }
-    #conteudo{
-        clear: left;
+
+.cabecalho nav ul li a{
+    text-decoration: none;
+    color: black;
+    font-size: 40px;
+    font-style: bold;
+    background-color:rgba(255, 0, 0, 0.3) ;
+    width: 233px;
+    height: 200px;
+    text-align: center;
+    display: inline-block;/*msm sendo inline se comporta em bloco*/
+    padding: 70px 10px 0px 10px;
+}
+
+
+#conteudo{
+    clear: left;
     
-    }
+}
