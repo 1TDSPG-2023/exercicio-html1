@@ -32,9 +32,9 @@
      background-color: aquamarine;
      width: 223px;
      height: 299px;
-     text-align: center
+     text-align: center;
      display: inline-block;
-     padding: 70px 10px 0 10px;
+     padding: 70px 10px 0px 10px;
 }
 
 #conteudo{
