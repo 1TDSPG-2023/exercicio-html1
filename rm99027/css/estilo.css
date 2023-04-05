@@ -1,4 +1,4 @@
-    *{
+/* *{
     margin: 0;
     padding: 0;
     box-sizing: border-box;
@@ -20,8 +20,8 @@
     
 }
 .cabecalho nav ul li{
-    display: inline-block;/*tirar de bloco e colocar em linha*/
-    list-style: none; /*tirar bolinhas da lista*/
+    display: inline-block;tirar de bloco e colocar em linha
+    list-style: none; tirar bolinhas da lista
     padding: 0 10px;
 }
 
@@ -34,7 +34,7 @@
     width: 233px;
     height: 200px;
     text-align: center;
-    display: inline-block;/*msm sendo inline se comporta em bloco*/
+    display: inline-block;msm sendo inline se comporta em bloco
     padding: 70px 10px 0px 10px;
 }
 
@@ -42,4 +42,5 @@
 #conteudo{
     clear: left;
     
-}
+}*/
+
