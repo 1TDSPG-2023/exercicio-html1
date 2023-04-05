@@ -1,0 +1,42 @@
+   /*
+   div{
+        margin: 100;
+        padding: 0;
+        box-sizing: border-box;
+    }
+        
+    body{
+        width: 1440px;
+        height: 1024px;
+        max-width: 100%;
+    }
+
+    .box-pai{
+        border: 100px  #ff0000;
+        display: flex;
+        flex-direction: row;
+    }
+
+    .box-filha{
+        color: #fff;
+        width: 100px;
+        right: 100px;
+        text-align: center;
+    }
+
+    .box-1{
+        background-color: blue;
+    }
+    .box-2{
+        background-color: blueviolet;
+    }
+
+    .box-3{
+        background-color: brown;
+    }
+
+    .box-4{
+        background-color: chocolate;
+    }
+*/
+
