@@ -1,0 +1,62 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Para que o FlexBox funcione é necessário determinar a largura e altura da base onde o container foi criado. */
+body{
+    width: 1440px;
+    height: 1024px;
+    max-width: 100%;
+}
+
+.box-pai{
+    /*    
+    flex-direction: row;
+    flex-direction: column;
+    flex-wrap: wrap;
+    flew-wrap: nowrap;
+    justify-content: flex-start;(horizontal)
+    justify-content: flex-end;
+    justify-content: center;
+    justify-content: space-between;
+    justify-content: space-around;
+    justify-content: space-evenly;
+    align-items: center;(vertical)
+    
+    alinhando ao centro exato:border:
+    align-items: center;
+    justify-content: center;
+    
+    */
+    border: 2px solid #f00;
+    display: flex;
+    width: 100%;
+    height: 100%;
+    flex-direction: row;   
+}
+
+.box-filha{
+    color: white;
+    width: 100px;
+    height: 100px;
+    text-align: center;
+    margin: 0 8%;
+}
+.box-1{
+    background-color: blue;
+    flex-grow: 1;
+}
+.box-2{
+    background-color: blueviolet;
+    flex-grow: 3    ;
+}
+.box-3{
+    background-color: brown;
+    flex-grow: 2;
+}
+.box-4{
+    background-color: chocolate;
+    flex-grow: 1;
+}
