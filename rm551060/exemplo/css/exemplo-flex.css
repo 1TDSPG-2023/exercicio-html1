@@ -4,7 +4,21 @@
     box-sizing: border-box;
 }
 
-/*Para que o flexbox funcione é necessário determinar a largura e altura da base onde o container foi criado.*/
+/*Para que o flexbox funcione é necessário determinar a largura e altura da base onde o container foi criado.
+flex-direction: row;
+justify-content: flex-start;
+justify-content: end;
+justify-content: center;
+justify-content: space-between;
+justify-content: space-around;
+justify-content: space-evenly;
+flex-direction: column;
+align-items: center;
+
+alinhando ao centro exato
+align-items: center;
+justify-content: center;*/
+
 body{
     width: 1440px;
     height: 1024px;
@@ -12,9 +26,11 @@ body{
 }
 
 .box-pai{
+    width: 100%;
+    height: 100%;
     border: 2px solid #000000;
     display: flex;
-    flex-direction: row;
+    flex-direction:row;
 }
 
 .box-filha{
@@ -22,16 +38,22 @@ body{
     width: 100px;
     height: 100px;
     text-align: center;
+    margin: 0 3%;
+    
 }
 .box-1{
     background-color: blue;
+    flex-grow: 1;
 }
 .box-2{
     background-color: blueviolet;
+    flex-grow: 3;
 }
 .box-3{
     background-color: #00ffdd;
+    flex-grow: 2;
 }
 .box-4{
     background-color: #ff0055;
+    flex-grow: 1;
 }
