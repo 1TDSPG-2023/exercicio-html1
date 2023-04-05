@@ -1,0 +1,68 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+/*Para que o Flexbox funcione é necessário determinar a largura e altura da base 
+onde o container foi criado */
+
+body{
+    width: 1440px;
+    height: 1024px;
+    max-width: 100%;
+}
+
+.box-pai{
+    border: 2px solid #ff0000;
+    display: flex;
+    /*flex-direction: row;
+    flex-direction: row-reverse
+    flex-direction: column;
+    flex-direction: column-reverse;
+    flex-wrap: wrap;
+    flex-wrap: nowwrap;
+    justify-content: flex-start;
+    justify-content: flex-end;
+    justify-content: center;
+    justify-content: space-between;
+    justify-content: space-around;
+    justify-content: space-evenly;
+    
+    alinhando ao centro exato
+    align-items: center;
+    justify-content: center;
+    */
+    width: 100%;
+    height: 100%;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+.box-filha{
+    color: #fff;
+    width: 100px;
+    height: 100px;
+    text-align: center;
+    margin: 0 3.2%;
+}
+
+.box-1{
+    background-color: blue;
+    flex-grow: 2;
+}
+
+.box-2{
+    background-color: blueviolet;
+    flex-grow: 2;
+}
+
+.box-3{
+    background-color: brown;
+    flex-grow: 2;
+}
+
+.box-4{
+    background-color: chocolate;
+    flex-grow: 2;
+
+}
