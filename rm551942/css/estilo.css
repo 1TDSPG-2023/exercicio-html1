@@ -1,4 +1,4 @@
-* {
+/* {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
@@ -48,3 +48,32 @@
 /*
     Iniciando FLEXBOX
 */
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    width: 1440px;
+    height: 1024px;
+    max-width: 100%;
+}
+
+.cabecalho>h1{
+    background-color: brown;
+    width: 300px;
+    height: 200px;
+    font-size: 50px;
+    padding: 70px 10px 0 10px;
+}
+
+.cabecalho>nav{
+    float: right;
+}
+.cabecalho nav ul li {
+    display: inline-block;
+    list-style: none;
+    padding: 0 10px;
+}
+
