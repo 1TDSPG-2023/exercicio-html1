@@ -3,7 +3,7 @@
     padding: 0;
     box-sizing: border-box;
 }
-
+/*
 .cabecalho>h1 {
     background-color: #d9d9d9;
     width: 300px;
@@ -14,6 +14,7 @@
     font-size: 50px;
 
 }
+
 
 .cabecalho nav {
     float: right;
@@ -44,7 +45,37 @@
 #conteudo {
     clear: left;
 }
+*/
 
 /*
     Iniciando FLEXBOX
 */
+.container {
+    max-width: 100%;
+}
+
+ul {
+    display: flex;
+    justify-content: flex-end;
+}
+
+.box-filha {
+    color: white;
+    width: 150px;
+    height: 150px;
+    text-align: center;
+    margin: 0 3.5%;
+}
+
+.box-1 {
+    background-color: #d9d9d9;
+}
+
+.box-2 {
+    background-color: #d9d9d9;
+}
+
+.box-3 {
+    background-color: #d9d9d9;
+
+}
