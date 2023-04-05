@@ -1,0 +1,50 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/*PARA QUE O FLEXBOX FUNCIONE É NECESSARIO DETERMINAR A LARGURA E A ALTURA DA BASE ONDE O CONTAINER FOI CRIADO*/
+
+body{
+    width: 1440px;
+    height: 1024px;
+    max-width: 100%;
+    }
+
+.box-pai{
+    border: 2px solid #ff0000;
+    display: flex;
+    width: 100%;
+    height: 100%;
+    
+
+}
+
+.box-filha{
+    color: #ffff;
+    width: 100px;
+    height: 100px;
+    text-align: center;
+    margin: 0 3%;
+}
+
+.box-1{
+    background-color: blue;
+    flex-grow: 1;
+}
+
+.box-2{
+    background-color: blueviolet;
+    flex-grow: 3;
+}
+
+.box-3{
+    background-color: aquamarine;
+    flex-grow: 2;
+}
+
+.box-4{
+    background-color: chartreuse;
+    flex-grow: 1;
+}
