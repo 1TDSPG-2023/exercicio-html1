@@ -1,0 +1,44 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+
+}
+
+/*Para que o flex box funcione eh necessario determinar a largura e altura da nasce onde o container foi criado*/
+body{
+    width: 1440px;
+    height: 1024px;
+    max-width: 100%;
+}
+
+.box-pai{
+    border: 2px solid red ;
+    display: flex;
+    width: 100%;
+    height: 100%;
+    flex-direction: row;
+}
+.box-filha{
+    color: white;
+    width: 100px;
+    height: 100px;
+    text-align: center;
+    margin: 0 5%;
+}
+.box-1{
+    background-color: red;
+    flex-grow: 2;
+}
+.box-2{
+    background-color: orange;
+    flex-grow: 4;
+}
+.box-3{
+    background-color: yellow;
+    flex-grow: 4;
+}
+.box-4{
+     background-color: green;
+     flex-grow: 2;
+1}
