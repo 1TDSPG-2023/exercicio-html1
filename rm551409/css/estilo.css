@@ -53,9 +53,34 @@ body {
     display: flex;
     width: 100%;
     height: 100%; 
-    flex-direction: row;
+    justify-content: space-between;
 }
 
-.cabecalho h1 > nav > ul {
-    background-color: #ff0000;
+.cabecalho nav {
+    width: 25%;
+    margin: 0 1%;
+}
+
+.cabecalho h1 {
+    display: flex;
+    background-color: aquamarine;
+    width: 20%;
+    align-items: center;
+    justify-content: center;
+}
+
+.cabecalho ul {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    height: 100%;
+}
+
+.cabecalho li {
+    display: flex;
+    background-color: aquamarine;
+    align-items: center;
+    justify-content: center;
+    width: 30%;
 }
