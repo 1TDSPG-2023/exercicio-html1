@@ -43,15 +43,19 @@
 
 #conteudo {
     clear: left;
+}*/
+
+
+/*    Iniciando FLEXBOX */
+
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
 }
 
-
-    Iniciando FLEXBOX
-*/
-
 body{
-    width: 1440px;
-    height: 1024px;
     max-width: 100%;
 }
 
@@ -61,21 +65,42 @@ body{
     width: 100%;
     height: 14vh;
     align-items: center;
-    justify-content: center;
+    justify-content: space-between;
 }
 
 .cabecalho_logo{
     color: blue;
     display: flex;
-    text-align: right;
-    justify-content: right;
-    background-color: lightblue;
-    float: left;
+    justify-content: space-between;
+    padding-left: 10px;
 
 }
 
 .cabecalho_link{
-    background-color: cornsilk;
-    di
+    color:chartreuse;
 }
 
+
+.cabecalho nav ul{
+    padding: 20px;
+}
+
+.cabecalho nav ul li{
+
+    display: inline-block;
+    height:100px;
+    width: 100px;
+    text-align: center;
+    padding-right: 80px;
+
+}
+
+.cabecalho nav ul li a{
+
+    display:inline-block;
+    flex-direction: column;
+    justify-content: space-between;
+    margin: 50px;
+    height: 10px;
+    width: 10px;
+}
